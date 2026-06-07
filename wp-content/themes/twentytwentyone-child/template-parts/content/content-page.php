@@ -40,6 +40,10 @@
         ?>
     </div><!-- .entry-content -->
 
+    <div class="mb-4">
+        <a href="/blog" class="btn-outline-dark btn btn-sm"><i class="fa-arrow-left me-2 fas"></i> Back to Blog</a>
+    </div>
+
     <?php if (get_edit_post_link()) : ?>
         <footer class="entry-footer default-max-width">
             <?php
