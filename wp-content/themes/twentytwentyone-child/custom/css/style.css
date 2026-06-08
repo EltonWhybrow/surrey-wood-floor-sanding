@@ -212,7 +212,17 @@ input.wpcf7-form-control.wpcf7-submit.has-spinner.btn.btn-outline-warning.rounde
 	z-index: -1;
 }
 #Footer .fs {
-	font-size: 22px;
+	font-size: 1.5rem;
+	padding: 0 10px;
+}
+
+#Footer .fs:hover {
+	color: #ccc !important;
+}
+
+#Footer .fs-instagram {
+	font-size: 1.8rem;
+	padding-top: 2px;
 }
 /***************************/
 /* Large devices (desktops, 992px and up) */
