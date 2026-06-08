@@ -24,25 +24,60 @@
 				<p><strong>E</strong> <a href="mailto:info@surreywoodfloorsanding.co.uk">info@surreywoodfloorsanding.co.uk</a><br>
 					<strong>T</strong> <a href="tel:07375628969">07375628969</a>
 				</p>
+				<h3 class="mb-3 text-uppercase fs-4 fs-md-3 ls-1 fw-semi">Connect with us</h3>
+				<ul class="list-inline d-flex align-items-center gap-2 social">
+					<li class="list-inline-item">
+						<a href="https://www.facebook.com/profile.php?id=100093524315759" class="d-inline-block text-black text-center fs">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://www.instagram.com/surreywoodfloorsanding/" class="d-inline-block text-black text-center fs fs-instagram">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+				</ul>
 			</div>
+
 			<div class="my-5 my-lg-0 text-center col-lg-4">
 				<img class="img-fluid" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/custom/images/logo2.png" alt="image">
 				<img class="img-fluid" src="<?php echo home_url('wp-content/uploads/2025/03/checkatrade-logo-stars-asd.webp'); ?>" alt="checkatrade-logo-stars-asd">
 			</div>
+
+			<!-- Location Pages -->
 			<div class="text-lg-end text-center col-lg-4">
-				<h3 class="mb-3 text-uppercase fs-4 fs-md-3 ls-1 fw-semi">Connect with us</h3>
-				<ul class="list-inline social">
-					<li class="list-inline-item align-items-center justify-content-between mx-lg-4">
-						<a href="https://www.facebook.com/profile.php?id=100093524315759" class="d-inline-block text-black text-center fs"><i class="fab fa-facebook-f"></i></a>
-					</li>
-					<?php	/*<li class="list-inline-item align-items-center justify-content-between mx-lg-4">
-						<a href="" class="d-inline-block text-black text-center fs"><i class="fa-brands fa-x-twitter"></i></a>
-						</li> */ ?>
-					<li class="list-inline-item align-items-center justify-content-between">
-						<a href="https://www.instagram.com/surreywoodfloorsanding/" class="d-inline-block text-black text-center fs"><i class="fab fa-instagram"></i></a>
-					</li>
-				</ul>
+
+				<h3 class="mb-3 text-uppercase fs-4 fs-md-3 ls-1 fw-semi">Areas We Cover</h3>
+				<?php
+				$location_pages = new WP_Query([
+					'post_type'      => 'page',
+					'posts_per_page' => -1,
+					'meta_key'       => '_wp_page_template',
+					'meta_value'     => 'page-location.php',
+					'orderby'        => 'title',
+					'order'          => 'ASC',
+				]);
+
+				if ($location_pages->have_posts()) : ?>
+					<ul class="list-unstyled">
+						<?php while ($location_pages->have_posts()) : $location_pages->the_post();
+							$slug  = get_post_field('post_name', get_the_ID());
+							$parts = explode('-', $slug);
+							$label = ucfirst(end($parts));
+						?>
+							<li class="mb-1">
+								<a href="<?php the_permalink(); ?>" class="text-dark">
+									<?php echo esc_html($label); ?>
+								</a>
+							</li>
+						<?php endwhile; ?>
+					</ul>
+				<?php endif;
+				wp_reset_postdata();
+				?>
 			</div>
+
+
 		</div>
 	</div>
 	<div class="mar-p-0 py-4 text-center text-uppercase copyright">
