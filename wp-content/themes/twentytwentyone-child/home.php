@@ -4,11 +4,11 @@
 
 	<?php if (have_posts()) : ?>
 
-		<div class="row g-4">
+		<div class="row g-4 gy-5">
 
 			<?php while (have_posts()) : the_post(); ?>
 
-				<div class="col-12 col-md-6">
+				<div class="mb-4 pb-2 col-12 col-md-6">
 					<article <?php post_class('h-100 d-flex flex-column'); ?>>
 
 						<?php if (has_post_thumbnail()) : ?>
@@ -27,7 +27,7 @@
 							<?php the_excerpt(); ?>
 						</div>
 
-						<div class="mt-auto pt-3">
+						<div class="mt-auto pt-1">
 							<a href="<?php the_permalink(); ?>" class="btn-outline-dark btn">Read More</a>
 						</div>
 
