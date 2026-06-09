@@ -224,6 +224,10 @@ input.wpcf7-form-control.wpcf7-submit.has-spinner.btn.btn-outline-warning.rounde
 	font-size: 1.8rem;
 	padding-top: 2px;
 }
+
+.entry-content h3 {
+	font-size: 22px;
+}
 /***************************/
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {

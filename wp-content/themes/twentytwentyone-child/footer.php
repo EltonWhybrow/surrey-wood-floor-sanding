@@ -47,7 +47,7 @@
 			<!-- Location Pages -->
 			<div class="text-lg-end text-center col-lg-4">
 
-				<h3 class="mb-3 text-uppercase fs-4 fs-md-3 ls-1 fw-semi">Areas We Cover</h3>
+				<h3 class="mb-3 text-uppercase fs-4 fs-md-3 ls-1 fw-semi">Areas Covered</h3>
 				<?php
 				$location_pages = new WP_Query([
 					'post_type'      => 'page',
@@ -66,7 +66,7 @@
 							$label = ucfirst(end($parts));
 						?>
 							<li class="mb-1">
-								<a href="<?php the_permalink(); ?>" class="text-dark">
+								<a href="<?php the_permalink(); ?>">
 									<?php echo esc_html($label); ?>
 								</a>
 							</li>
