@@ -229,13 +229,21 @@ input.wpcf7-form-control.wpcf7-submit.has-spinner.btn.btn-outline-warning.rounde
 	font-size: 22px;
 }
 
-.entry-content a {
+.entry-content a::not(.btn) {
 	text-decoration: underline !important;
 	color: #967d48;
 }
 .entry-content a:hover {
 	color: #bd9d5a;
 }
+
+#page-location {
+	h3,
+	h5 {
+		font-size: 18px;
+	}
+}
+
 /***************************/
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {

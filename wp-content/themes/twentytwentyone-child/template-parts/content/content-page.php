@@ -9,7 +9,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?> CHEESE" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="mb-4">
         <a href="/blog" class="btn-outline-dark btn btn-sm"><i class="fa-arrow-left me-2 fas"></i> Back to Blog</a>
     </div>
