@@ -228,6 +228,14 @@ input.wpcf7-form-control.wpcf7-submit.has-spinner.btn.btn-outline-warning.rounde
 .entry-content h3 {
 	font-size: 22px;
 }
+
+.entry-content a {
+	text-decoration: underline !important;
+	color: #967d48;
+}
+.entry-content a:hover {
+	color: #bd9d5a;
+}
 /***************************/
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
