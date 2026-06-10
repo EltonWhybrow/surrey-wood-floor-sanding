@@ -1,6 +1,21 @@
 <?php get_header('blog'); ?>
 
-<main id="primary" class="py-5 site-main container">
+<main id="primary" class="container">
+	<div class="text-center wow fadeInUp">
+		<h1 class="mt-4 mb-4 text-uppercase fw-bold">
+			<?php
+			// Get the archive/page title, not the post title
+			if (is_archive()) {
+				the_archive_title();
+			} elseif (is_home()) {
+				// For blog index page
+				echo 'Blog'; // Or get_the_title() of your blog page
+			} else {
+				// For other pages
+				echo get_the_title(get_queried_object_id());
+			}
+			?></h1>
+	</div>
 
 	<?php if (have_posts()) : ?>
 
