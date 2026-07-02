@@ -73,6 +73,6 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
-          server: staging.joewoodfloorsanding.com
+          server: staging.surreywoodfloorsanding.co.uk
           username: ${{ secrets.FTP_USER_STAGING }}
           password: ${{ secrets.FTP_PWD_STAGING }}
