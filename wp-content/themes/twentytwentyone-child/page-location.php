@@ -200,7 +200,7 @@ get_header(); ?>
           <img class="d-inline img-fluid d-lg-none" src="<?php the_field('contact_image', 7) ?>" alt="image" />
           <div class="bg-img2"></div>
         </div>
-        <div class="col-lg-6 bg">
+        <div class="pt-5 col-lg-6 bg">
           <div class="mx-auto pb-5 text-lg-start text-center align-center cus-wdth">
             <div class="my-lg-5 py-xl-5">
               <h2 class="mb-3 text-uppercase fw-medium ls-2 Bor-lft">Get Started Today</h2>
