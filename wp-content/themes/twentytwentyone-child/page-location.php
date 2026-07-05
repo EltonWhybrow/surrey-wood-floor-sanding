@@ -7,7 +7,7 @@ get_header(); ?>
 
 <!-- Hero Banner -->
 <div id="page-location">
-  <section class="position-relative MainBanner">
+  <section class="position-relative locations-banner">
     <img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/custom/images/shade.png" alt="" class="bnr-shade" />
     <?php
     $hero_image = get_field('location_hero_image');
@@ -25,7 +25,7 @@ get_header(); ?>
           </h1>
           <p class="mb-3"><?php the_field('location_hero_subtitle'); ?></p>
           <a href="#enquire" class="btn btn-success">Get a Free Quote</a>
-          <a href="tel:07375628969" class="ms-3 btn-outline-light btn">
+          <a href="tel:07375628969" class="ms-0 ms-sm-3 btn-outline-light btn">
             <i class="me-2 fas fa-phone"></i>07375 628969
           </a>
         </div>
