@@ -228,12 +228,3 @@ form .border-bottom {
 #ScrollToTop:hover {
 	background-color: #aaa;
 }
-
-/********** Testimonials Slider ******************/
-/* h3.wpmtst-testimonial-heading.testimonial-heading {
-    display: none;
-} */
-
-.wpmtst-testimonial-content p {
-	font-size: 1.5rem;
-}

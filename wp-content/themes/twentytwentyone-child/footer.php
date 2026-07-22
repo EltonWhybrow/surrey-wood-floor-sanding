@@ -25,7 +25,7 @@
 					<strong>T</strong> <a href="tel:07375628969">07375628969</a>
 				</p>
 				<h3 class="mb-3 text-uppercase fs-4 fs-md-3 ls-1 fw-semi">Connect with us</h3>
-				<ul class="list-inline align-items-center gap-2 social">
+				<ul class="list-inline align-items-center social-icons">
 					<li class="list-inline-item">
 						<a href="https://www.facebook.com/profile.php?id=100093524315759" class="d-inline-block text-black text-center fs">
 							<i class="fab fa-facebook-f"></i>
