@@ -265,6 +265,20 @@ input.wpcf7-form-control.wpcf7-submit.has-spinner.btn.btn-outline-warning.rounde
 	}
 }
 
+/********** Testimonials Slider ******************/
+/* h3.wpmtst-testimonial-heading.testimonial-heading {
+    display: none;
+} */
+
+.wpmtst-testimonial-content p {
+	font-size: 1.5rem;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: start;
+}
+
 /***************************/
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -473,6 +487,12 @@ input.wpcf7-form-control.wpcf7-submit.has-spinner.btn.btn-outline-warning.rounde
 	}
 }
 @media (max-width: 768px) {
+	.carousel-caption {
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+	.social-icons {
+		justify-content: center;
+	}
 	#Header {
 		position: relative !important;
 		background-color: #000;
